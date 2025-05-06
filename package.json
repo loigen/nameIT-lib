@@ -1,0 +1,53 @@
+{
+  "name": "name-it-lib",
+  "version": "1.0.0",
+  "description": "A simple utility library written in TypeScript.",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --tsconfig tsconfig.build.json",
+    "lint": "eslint src --ext .ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^8.0.0",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.5",
+    "tsup": "^7.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.5",
+    "dotenv": "^16.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loigen/nameIT-lib.git"
+  },
+  "keywords": [
+    "typescript",
+    "utility",
+    "library"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yourusername/name-it-lib/issues"
+  },
+  "homepage": "https://github.com/yourusername/name-it-lib#readme"
+}

@@ -1,0 +1,12 @@
+{
+    "greeting": "¡Hola, {{name}}!",
+    "form": {
+      "submit": "Enviar",
+      "cancel": "Cancelar"
+    },
+    "errors": {
+      "required": "Este campo es obligatorio.",
+      "email": "Dirección de correo electrónico no válida."
+    }
+  }
+  
